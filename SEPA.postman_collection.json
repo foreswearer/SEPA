@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "1cc34ca3-ac9b-46c3-9213-2db096d4fd1d",
+		"name": "SEPA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15686155"
+	},
+	"item": [
+		{
+			"name": "5 years min",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://timeseries.sepa.org.uk/KiWebPortal/rest/auth/oidcServer/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "99fe8f86-8451-46f9-aa01-aeb18b373d19",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "675b21f8-6408-40bb-bc13-156ae34f50ad",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "TokenSEPA",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&type=queryServices&datasource=0&request=gettimeseriesvalues&metadata=true&returnfields=Timestamp,Value,Quality Code&ts_path=1/*/SG/LTV.HMonth.Min&period=P5Y&format=xlsx",
+					"protocol": "https",
+					"host": [
+						"timeseries",
+						"sepa",
+						"org",
+						"uk"
+					],
+					"path": [
+						"KiWIS",
+						"KiWIS"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "kisters"
+						},
+						{
+							"key": "type",
+							"value": "queryServices"
+						},
+						{
+							"key": "datasource",
+							"value": "0"
+						},
+						{
+							"key": "request",
+							"value": "gettimeseriesvalues"
+						},
+						{
+							"key": "metadata",
+							"value": "true"
+						},
+						{
+							"key": "returnfields",
+							"value": "Timestamp,Value,Quality Code"
+						},
+						{
+							"key": "ts_path",
+							"value": "1/*/SG/LTV.HMonth.Min"
+						},
+						{
+							"key": "period",
+							"value": "P5Y"
+						},
+						{
+							"key": "format",
+							"value": "xlsx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 years max",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://timeseries.sepa.org.uk/KiWebPortal/rest/auth/oidcServer/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "99fe8f86-8451-46f9-aa01-aeb18b373d19",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "675b21f8-6408-40bb-bc13-156ae34f50ad",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "TokenSEPA",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&type=queryServices&datasource=0&request=gettimeseriesvalues&metadata=true&returnfields=Timestamp,Value,Quality Code&ts_path=1/*/SG/LTV.HMonth.Max&period=P5Y&format=xlsx",
+					"protocol": "https",
+					"host": [
+						"timeseries",
+						"sepa",
+						"org",
+						"uk"
+					],
+					"path": [
+						"KiWIS",
+						"KiWIS"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "kisters"
+						},
+						{
+							"key": "type",
+							"value": "queryServices"
+						},
+						{
+							"key": "datasource",
+							"value": "0"
+						},
+						{
+							"key": "request",
+							"value": "gettimeseriesvalues"
+						},
+						{
+							"key": "metadata",
+							"value": "true"
+						},
+						{
+							"key": "returnfields",
+							"value": "Timestamp,Value,Quality Code"
+						},
+						{
+							"key": "ts_path",
+							"value": "1/*/SG/LTV.HMonth.Max"
+						},
+						{
+							"key": "period",
+							"value": "P5Y"
+						},
+						{
+							"key": "format",
+							"value": "xlsx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 years mean",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://timeseries.sepa.org.uk/KiWebPortal/rest/auth/oidcServer/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "99fe8f86-8451-46f9-aa01-aeb18b373d19",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "675b21f8-6408-40bb-bc13-156ae34f50ad",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "TokenSEPA",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://timeseries.sepa.org.uk/KiWIS/KiWIS?service=kisters&type=queryServices&datasource=0&request=gettimeseriesvalues&ts_path=1/*/SG/LTV.HMonth.Mean&period=P1Y&metadata=true&returnfields=Timestamp,Value,Quality Code",
+					"protocol": "https",
+					"host": [
+						"timeseries",
+						"sepa",
+						"org",
+						"uk"
+					],
+					"path": [
+						"KiWIS",
+						"KiWIS"
+					],
+					"query": [
+						{
+							"key": "service",
+							"value": "kisters"
+						},
+						{
+							"key": "type",
+							"value": "queryServices"
+						},
+						{
+							"key": "datasource",
+							"value": "0"
+						},
+						{
+							"key": "request",
+							"value": "gettimeseriesvalues"
+						},
+						{
+							"key": "ts_path",
+							"value": "1/*/SG/LTV.HMonth.Mean"
+						},
+						{
+							"key": "period",
+							"value": "P1Y"
+						},
+						{
+							"key": "metadata",
+							"value": "true"
+						},
+						{
+							"key": "returnfields",
+							"value": "Timestamp,Value,Quality Code"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get stations",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://timeseries.sepa.org.uk/KiWebPortal/rest/auth/oidcServer/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "99fe8f86-8451-46f9-aa01-aeb18b373d19",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "675b21f8-6408-40bb-bc13-156ae34f50ad",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "TokenSEPA",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://timeseries.sepa.org.uk/KiWIS/KiWIS?data-source=0&request=getStationList&station-name=*&format=json",
+					"protocol": "https",
+					"host": [
+						"timeseries",
+						"sepa",
+						"org",
+						"uk"
+					],
+					"path": [
+						"KiWIS",
+						"KiWIS"
+					],
+					"query": [
+						{
+							"key": "data-source",
+							"value": "0"
+						},
+						{
+							"key": "request",
+							"value": "getStationList"
+						},
+						{
+							"key": "station-name",
+							"value": "*"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
